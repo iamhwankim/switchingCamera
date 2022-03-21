@@ -17,15 +17,15 @@ function setup() {
   
   backBtn = createButton('Back');
   backBtn.position(10,10);
-  backBtn.size(140,25);
+  backBtn.size(200,40);
   backBtn.mouseReleased(backAction);
   captureBtn = createButton('Capture');
-  captureBtn.position(width/2 - 70,10);
-  captureBtn.size(140,25);
+  captureBtn.position(width/2 - 100,10);
+  captureBtn.size(200,40);
   captureBtn.mouseReleased(takePhoto);
   switchBtn = createButton('Switch');
-  switchBtn.position(width-150,10);
-  switchBtn.size(140,25);
+  switchBtn.position(width-200,10);
+  switchBtn.size(200,40);
   switchBtn.mouseReleased(switchCam)
   
   stillShot = createGraphics(windowWidth, windowHeight);
