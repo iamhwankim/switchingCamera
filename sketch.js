@@ -12,6 +12,7 @@ let rearSetting;
 let frontSetting;
 
 function setup() {
+  pixelDensity(1);
   createCanvas(displayWidth, displayHeight);
   
   backBtn = createButton('Back');
@@ -74,9 +75,11 @@ function switchCam(){
     switcher = 1;
     camera.remove();
     camera = createCapture(rearSetting);
+    camera.hide();
   }else if(switcher == 1){
     switcher = 0;
     camera.remove();
     camera = createCapture(frontSetting);
+    camera.hide();
   }
 }
