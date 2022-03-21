@@ -12,8 +12,8 @@ let rearSetting;
 let frontSetting;
 
 function setup() {
-  pixelDensity(1);
-  createCanvas(displayWidth, displayHeight);
+  //pixelDensity(1);
+  createCanvas(windowWidth, windowHeight);
   
   backBtn = createButton('Back');
   backBtn.position(10,10);
@@ -25,7 +25,7 @@ function setup() {
   switchBtn.position(290,10);
   switchBtn.mouseReleased(switchCam)
   
-  stillShot = createGraphics(displayWidth, displayHeight);
+  stillShot = createGraphics(windowWidth, windowHeight);
   rearSetting = {
     audio: false,
     video: {
