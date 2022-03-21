@@ -1,7 +1,5 @@
 let state = 0; // 0: photo available 1: photo taken
 let switcher = 0; // 0:front 1:rear
-//let frontCam;
-//let rearCam;
 let camera;
 let backBtn;
 let captureBtn;
@@ -17,15 +15,15 @@ function setup() {
   
   backBtn = createButton('Back');
   backBtn.position(10,10);
-  backBtn.size(300,60);
+  backBtn.size(400,80);
   backBtn.mouseReleased(backAction);
   captureBtn = createButton('Capture');
-  captureBtn.position(width/2 - 150,10);
-  captureBtn.size(300,60);
+  captureBtn.position(width/2 - 200,10);
+  captureBtn.size(400,80);
   captureBtn.mouseReleased(takePhoto);
   switchBtn = createButton('Switch');
-  switchBtn.position(width-300,10);
-  switchBtn.size(300,60);
+  switchBtn.position(width-400,10);
+  switchBtn.size(400,80);
   switchBtn.mouseReleased(switchCam)
   
   stillShot = createGraphics(windowWidth, windowHeight);
