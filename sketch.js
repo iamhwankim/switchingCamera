@@ -11,6 +11,7 @@ let frontSetting;
 
 function setup() {
   //pixelDensity(1);
+  fullscreen(true);
   createCanvas(windowWidth, windowHeight);
   
   backBtn = createButton('Back');
